@@ -1,0 +1,7 @@
+#cardid:hover{
+ 
+    transition: .2s;
+    transform: scale(1.015);
+    cursor: pointer;
+
+}

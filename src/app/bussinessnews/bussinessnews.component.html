@@ -1,0 +1,21 @@
+<div class="container">
+    <h2 class="mb-3">Top headlines</h2>
+    <div class="container-fluid ">
+        <div class="row " >
+            <div *ngFor="let d of bussinessNewsDisplay" id="cardid" class="card bg-light mb-4 ms-auto me-auto" style="width: 18rem;">
+                <img src="{{d.urlToImage}}" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <div>
+                        <p style="font-size: 10px;">Time :{{d.publishedAt}} <br> Source :{{d.source.name}}</p>
+                    </div>
+                  <h5 class="card-title">{{d.title}}</h5>
+                  <p class="card-text">{{d.description}}</p>
+                </div>
+                  <div class="mb-2 mt-auto"> 
+                      <a href="{{d.url}}" class="btn btn-primary rounded-3 m-3">Read more</a>
+                  </div>
+                
+              </div>
+        </div>    
+    </div>
+</div>
